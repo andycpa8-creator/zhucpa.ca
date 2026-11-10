@@ -1,4 +1,4 @@
-# zhucpa.ca — MarkhamCPA 静态网站
+# zhucpa.ca — AndyZhuCPA 静态网站
 
 Wix 原站的静态重建版, 可直接部署到 GitHub Pages (免费托管), 域名保持 zhucpa.ca 不变。
 
@@ -43,7 +43,7 @@ assets/*.jpg / *.png     本地图片 (见下)
 
 1. 在 GitHub 新建一个公开仓库, 例如 `zhucpa-ca` (名字任意)。
 2. 把本文件夹的全部内容上传到仓库根目录 (不要多套一层文件夹)。
-   - 命令行: `git init && git add . && git commit -m "MarkhamCPA site" && git branch -M main && git remote add origin https://github.com/<你的用户名>/zhucpa-ca.git && git push -u origin main`
+   - 命令行: `git init && git add . && git commit -m "AndyZhuCPA site" && git branch -M main && git remote add origin https://github.com/<你的用户名>/zhucpa-ca.git && git push -u origin main`
    - 或直接在 GitHub 网页端用 "Add file → Upload files" 上传。
 3. 打开仓库 Settings → Pages: Source 选 "Deploy from a branch", Branch 选 `main` / `(root)`, 保存。
 4. 等一两分钟, 站点即在 `https://<你的用户名>.github.io/zhucpa-ca/` 上线。
