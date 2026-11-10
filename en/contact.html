@@ -22,10 +22,8 @@
 </header>
 <!--
   Booking config (BOOKING CONFIG)
-  CALENDLY_URL = "https://calendly.com/andycpa8/30min" — fill in your free Calendly 15-minute consultation event link and the "Book a 15-minute consultation" button below will appear.
-  Example: CALENDLY_URL = "https://calendly.com/andycpa8/30min"
-  While empty, this page shows only phone / email / WeChat — no dead links.
-  (Keep the CALENDLY_URL in the <script> below in sync with this value.)
+  Booking calendar is embedded inline on this page (Calendly inline widget): https://calendly.com/andycpa8/30min.
+  If the link changes, update the widget data-url and the fallback booking link below together.
 -->
 <div class="hero">
   <div class="wrap">
@@ -37,8 +35,11 @@
   <div class="wrap">
     <h2>Book a 15-minute consultation</h2>
     <p>Contact Andy Zhu — 15 min. Book a date and time that works for you.</p>
-    <p><a id="booking-btn" class="btn" href="#" style="display:none" target="_blank" rel="noopener">Book Now — Contact Andy Zhu</a></p>
-    <p id="booking-note" class="muted">Online booking is coming soon. Please reach out by phone, email or WeChat in the meantime.</p>
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/andycpa8/30min" style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
+    <p class="muted">If the calendar above doesn't load, <a href="https://calendly.com/andycpa8/30min" target="_blank" rel="noopener">book here</a>.</p>
     <h2>Contact</h2>
     <div class="contact-cards">
       <div class="card">
@@ -57,19 +58,6 @@
     </div>
   </div>
 </section>
-<script>
-  // 预约链接 / Booking link — 与文件顶部注释中的 CALENDLY_URL 保持一致 / keep in sync with CALENDLY_URL in the comment at the top of this file.
-  var CALENDLY_URL = "https://calendly.com/andycpa8/30min";
-  (function () {
-    var btn = document.getElementById("booking-btn");
-    var note = document.getElementById("booking-note");
-    if (CALENDLY_URL) {
-      btn.href = CALENDLY_URL;
-      btn.style.display = "inline-block";
-      if (note) note.style.display = "none";
-    }
-  })();
-</script>
 
 <footer class="site-footer">
   <div class="wrap">
