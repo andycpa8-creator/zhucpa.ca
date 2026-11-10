@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>联系我们 | MarkhamCPA</title>
+<meta name="description" content="联系 Andy Zhu, CPA LPA MAcc — 电话 +1 647-877-8662, 邮箱 andyzhucpa@gmail.com, 微信。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">MarkhamCPA<span>万锦特许专业会计师 持牌审计师</span></a>
+    <nav class="main-nav">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="blog/index.html">税务博客</a>
+      <a href="contact.html" class="active">联系我们</a>
+      <a class="lang" href="en/contact.html">EN</a>
+    </nav>
+  </div>
+</header>
+<!--
+  预约设置 (BOOKING CONFIG)
+  CALENDLY_URL = "" —— 填入 Calendly 免费版的 15 分钟咨询活动链接后, 下方“预约 15 分钟咨询”按钮才会显示。
+  例如: CALENDLY_URL = "https://calendly.com/andyzhu/15min"
+  留空时本页只显示电话 / 邮箱 / 微信联系方式, 不会出现无效链接。
+  (下方 <script> 中的 CALENDLY_URL 须与此处保持一致。)
+-->
+<div class="hero">
+  <div class="wrap">
+    <h1>联系 Andy Zhu</h1>
+    <p class="sub">请联系我，进一步沟通</p>
+  </div>
+</div>
+<section>
+  <div class="wrap">
+    <h2>预约 15 分钟咨询</h2>
+    <p>想进一步沟通，可以预约一次 15 分钟的咨询。</p>
+    <p><a id="booking-btn" class="btn" href="#" style="display:none" target="_blank" rel="noopener">预约 15 分钟咨询</a></p>
+    <p id="booking-note" class="muted">在线预约即将开通，请先通过以下方式联系。</p>
+    <h2>联系方式</h2>
+    <div class="contact-cards">
+      <div class="card">
+        <h3>电话</h3>
+        <p><a href="tel:+16478778662">+1 647-877-8662</a></p>
+      </div>
+      <div class="card">
+        <h3>邮箱</h3>
+        <p><a href="mailto:andyzhucpa@gmail.com">andyzhucpa@gmail.com</a></p>
+      </div>
+      <div class="card">
+        <h3>微信</h3>
+        <p>扫描下方二维码添加微信</p>
+        <img class="qr" src="assets/wechat-qr.jpg" alt="Andy Zhu 微信二维码">
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  // 预约链接 / Booking link — 与文件顶部注释中的 CALENDLY_URL 保持一致 / keep in sync with CALENDLY_URL in the comment at the top of this file.
+  var CALENDLY_URL = "";
+  (function () {
+    var btn = document.getElementById("booking-btn");
+    var note = document.getElementById("booking-note");
+    if (CALENDLY_URL) {
+      btn.href = CALENDLY_URL;
+      btn.style.display = "inline-block";
+      if (note) note.style.display = "none";
+    }
+  })();
+</script>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2024 ZHUCPA – All rights reserved</span>
+    <span>电话 <a href="tel:+16478778662">+1 647-877-8662</a> · 邮箱 <a href="mailto:andyzhucpa@gmail.com">andyzhucpa@gmail.com</a></span>
+  </div>
+</footer>
+<div class="sticky-bar">
+  <a href="tel:+16478778662">📞 电话</a>
+  <a href="mailto:andyzhucpa@gmail.com">✉️ 邮件</a>
+  <a href="assets/wechat-qr.jpg" target="_blank" rel="noopener">💬 微信</a>
+</div>
+</body>
+</html>
